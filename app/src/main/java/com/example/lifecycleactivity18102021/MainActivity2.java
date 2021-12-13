@@ -4,62 +4,49 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
-import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity2 extends AppCompatActivity {
 
-
-    Button mBtnNavigateScreen2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        Log.d("BBB","onCreate");
-
-        mBtnNavigateScreen2 = findViewById(R.id.buttonNavigateScreen2);
-
-        mBtnNavigateScreen2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
+        setContentView(R.layout.activity_main2);
+        Log.d("BBB","Main2 : onCreate");
     }
 
     @Override
     protected void onStart() {
         super.onStart();
-        Log.d("BBB","onStart");
+        Log.d("BBB","Main2 : onStart");
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        Log.d("BBB","onResume");
+        Log.d("BBB","Main2 : onResume");
     }
 
     @Override
     protected void onStop() {
         super.onStop();
-        Log.d("BBB","onStop");
+        Log.d("BBB","Main2 : onStop");
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-        Log.d("BBB","onPause");
+        Log.d("BBB","Main2 : onPause");
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        Log.d("BBB","onDestroy");
+        Log.d("BBB","Main2 : onDestroy");
     }
 
     @Override
     protected void onRestart() {
         super.onRestart();
-        Log.d("BBB","onRestart");
+        Log.d("BBB","Main2 : onRestart");
     }
 }
