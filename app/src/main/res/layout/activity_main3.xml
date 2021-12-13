@@ -16,8 +16,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
     <Button
+        android:layout_marginBottom="10dp"
         android:id="@+id/buttonLaunchModeSingleTop"
         android:text="Launch mode : SingleTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/buttonLaunchModeSingleTask"
+        android:text="Launch mode : SingleTask"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 </LinearLayout>

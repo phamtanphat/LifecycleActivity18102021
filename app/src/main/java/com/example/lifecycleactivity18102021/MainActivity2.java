@@ -2,16 +2,31 @@ package com.example.lifecycleactivity18102021;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 
 public class MainActivity2 extends AppCompatActivity {
 
+
+    Button mBtnNavigateScreen3;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
         Log.d("BBB","Main2 : onCreate");
+
+        mBtnNavigateScreen3 = findViewById(R.id.buttonNavigateScreen3);
+
+        mBtnNavigateScreen3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity2.this,MainActivity3.class);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override

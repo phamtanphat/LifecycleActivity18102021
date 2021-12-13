@@ -17,7 +17,7 @@
         android:layout_height="wrap_content"/>
 
     <Button
-        android:id="@+id/buttonNavigateScreen33"
+        android:id="@+id/buttonNavigateScreen3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Navigate Screen 3" />
